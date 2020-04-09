@@ -12,7 +12,7 @@ public class TestResultDialogFragment extends DialogFragment {
     private String title;
     private String text;
 
-    public TestResultDialogFragment(String title, String text) {
+    TestResultDialogFragment(String title, String text) {
         this.title = title;
         this.text = text;
     }
