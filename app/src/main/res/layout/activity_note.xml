@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoteActivity">
+    tools:context=".NoteActivity"
+    android:background="?attr/bgColor">
 
     <LinearLayout
         android:orientation="vertical"
@@ -15,13 +16,15 @@
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter note"/>
+            android:hint="Enter note"
+            android:textColorHint="?attr/metaTextColor"/>
         <EditText
             android:id="@+id/state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="Enter your state (1-5)"/>
+            android:hint="Enter your state (1-5)"
+            android:textColorHint="?attr/metaTextColor"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,14 +36,16 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="Save"
-                android:onClick="save"/>
+                android:onClick="save"
+                android:textColor="?attr/textColor"/>
             <Button
                 android:id="@+id/deleteButton"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="Delete"
-                android:onClick="delete"/>
+                android:onClick="delete"
+                android:textColor="?attr/textColor"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

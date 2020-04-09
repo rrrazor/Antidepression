@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="?attr/bgColor">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -23,7 +24,8 @@
                 android:gravity="center_vertical|right"
                 android:text="Beck Depression Questionnaire"
                 android:textAlignment="center"
-                android:textSize="32dp" />
+                android:textSize="32dp"
+                android:textColor="?attr/metaTextColor" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -40,7 +42,8 @@
                 android:text="This questionnaire contains claim groups. Read each statement group carefully. Then, identify in each group one statement that best matches how you felt THIS WEEK AND TODAY. Check the box next to the selected statement."
                 android:textSize="16dp"
                 android:layout_margin="30px"
-                android:layout_marginTop="0px"/>
+                android:layout_marginTop="0px"
+                android:textColor="?attr/metaTextColor"/>
 
         </LinearLayout>
     </ScrollView>

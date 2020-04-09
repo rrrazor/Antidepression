@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AudioActivity">
+    tools:context=".AudioActivity"
+    android:background="?attr/bgColor">
 
 
     <LinearLayout
@@ -22,7 +23,8 @@
             android:gravity="center_vertical|right"
             android:text="Music relaxation"
             android:textAlignment="center"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:textColor="?attr/metaTextColor" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -38,34 +40,39 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:text="@string/backarrow"
-                android:onClick="previous"/>
+                android:onClick="previous"
+                android:textColor="?attr/textColor"/>
             <Button
                 android:id="@+id/start"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Play"
-                android:onClick="play"/>
+                android:onClick="play"
+                android:textColor="?attr/textColor"/>
             <Button
                 android:id="@+id/pause"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Pause"
-                android:onClick="pause"/>
+                android:onClick="pause"
+                android:textColor="?attr/textColor"/>
             <Button
                 android:id="@+id/stop"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Stop"
-                android:onClick="stop"/>
+                android:onClick="stop"
+                android:textColor="?attr/textColor"/>
             <Button
                 android:id="@+id/next"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:text=">"
-                android:onClick="next"/>
+                android:onClick="next"
+                android:textColor="?attr/textColor"/>
         </LinearLayout>
 
         <TextView
@@ -73,7 +80,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Volume" android:layout_marginTop="32dp"/>
+            android:text="Volume" android:layout_marginTop="32dp"
+            android:textColor="?attr/metaTextColor"/>
 
         <SeekBar
             android:id="@+id/volumeControl"
