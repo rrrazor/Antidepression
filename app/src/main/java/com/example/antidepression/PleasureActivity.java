@@ -59,7 +59,7 @@ public class PleasureActivity extends AppCompatActivity {
                     if (selectedView != null) {
                         selectedView.setBackgroundColor(Color.TRANSPARENT);
                     }
-                    view.setBackgroundColor(Color.parseColor("#d0d1d1"));
+                    view.setBackgroundColor(getResources().getColor(R.color.metaTextColorDark));
                 } else {
                     hideButtons();
                     if (selectedView != null) {
@@ -189,7 +189,7 @@ public class PleasureActivity extends AppCompatActivity {
 
         List<Pleasure> list = adapter.getAllPleasure();
         currentItems = list.subList(0, Integer.min(4, list.size()));
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, currentItems);
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.list_item, currentItems);
         pleasureList.setAdapter(arrayAdapter);
         adapter.close();
     }

@@ -33,7 +33,7 @@ public class MainActivity extends ListActivity {
 
         // создаем адаптер
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, activities);
+                R.layout.list_item, activities);
         setListAdapter(adapter);
 
         AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {

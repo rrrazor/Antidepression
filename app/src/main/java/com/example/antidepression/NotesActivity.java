@@ -56,7 +56,7 @@ public class NotesActivity extends AppCompatActivity {
 
         List<Note> notes = adapter.getNotes();
 
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, notes);
+        arrayAdapter = new ArrayAdapter<>(this, R.layout.list_item, notes);
         noteList.setAdapter(arrayAdapter);
         adapter.close();
     }

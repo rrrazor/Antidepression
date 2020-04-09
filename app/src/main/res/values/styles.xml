@@ -2,17 +2,21 @@
 
     <!-- Base application theme. -->
     <style name="LightTheme" parent="Theme.AppCompat.DayNight">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColor">@color/colorText</item>
+        <item name="metaTextColor">@color/metaTextColor</item>
+        <item name="bgColor">@color/colorBackGround</item>
     </style>
 
     <style name="DarkTheme" parent="ThemeOverlay.AppCompat.Dark">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColor">@color/colorTextDark</item>
+        <item name="metaTextColor">@color/metaTextColorDark</item>
+        <item name="bgColor">@color/colorBackGroundDark</item>
     </style>
 
 </resources>
