@@ -16,7 +16,7 @@ public class AdviceScreenSlidePageFragment extends Fragment {
     private final int position;
     private final String advice;
 
-    public AdviceScreenSlidePageFragment(String advice, int position) {
+    AdviceScreenSlidePageFragment(String advice, int position) {
         this.advice = advice;
         this.position = position;
     }
@@ -26,22 +26,22 @@ public class AdviceScreenSlidePageFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.advice_fragment_screen_slide_page, container, false);
-        TextView textView = (TextView) (rootView.findViewById(R.id.textView));
+        TextView textView = rootView.findViewById(R.id.textView);
         textView.setText(advice);
 
-        ImageView backgroundImage = (ImageView) (rootView.findViewById(R.id.backgound_image));
-        FrameLayout parent = (FrameLayout) (rootView.findViewById(R.id.parent));
+        ImageView backgroundImage = rootView.findViewById(R.id.backgound_image);
+//        FrameLayout parent = rootView.findViewById(R.id.parent);
         String packageName = this.getContext().getApplicationInfo().packageName;
-        int imageId = getResourseId(this.getContext(), "bg" + position, "drawable", packageName);
+        int imageId = getResourceId(this.getContext(), "bg" + position, packageName);
         //parent.setBackgroundResource(imageId);
         Uri uri = Uri.parse("android.resource://"+ packageName+"/"+imageId);
         backgroundImage.setImageURI(uri);
         return rootView;
     }
 
-    public static int getResourseId(Context context, String pVariableName, String pResourcename, String pPackageName) throws RuntimeException {
+    private static int getResourceId(Context context, String pVariableName, String pPackageName) throws RuntimeException {
         try {
-            return context.getResources().getIdentifier(pVariableName, pResourcename, pPackageName);
+            return context.getResources().getIdentifier(pVariableName, "drawable", pPackageName);
         } catch (Exception e) {
             throw new RuntimeException("Error getting Resource ID.", e);
         }

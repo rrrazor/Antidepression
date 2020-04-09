@@ -57,7 +57,7 @@ public class AboutDepressionActivity extends AppCompatActivity {
     }
 
     private int getThemeFromPreferences() {
-        Boolean darkTheme = settings.getBoolean(IS_DARK_THEME, false);
+        boolean darkTheme = settings.getBoolean(IS_DARK_THEME, false);
         return darkTheme ? R.style.DarkTheme : R.style.LightTheme;
     }
 }
