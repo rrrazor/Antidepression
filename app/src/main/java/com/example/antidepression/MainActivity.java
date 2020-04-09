@@ -17,7 +17,7 @@ public class MainActivity extends ListActivity {
     public static final String IS_DARK_THEME = "isDarkTheme";
     private SharedPreferences settings;
 
-    String[] activities = {"About depression", "Test", "Advices", "Thought catalog", "Music relaxion", "Pleasure therapy"};
+    String[] activities = {"About depression", "Test", "Advices", "Thought catalog", "Music relaxation", "Pleasure therapy"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +54,7 @@ public class MainActivity extends ListActivity {
                     case "Thought catalog":
                         intent = new Intent(getApplicationContext(), NotesActivity.class);
                         break;
-                    case "Music relaxion":
+                    case "Music relaxation":
                         intent = new Intent(getApplicationContext(), AudioActivity.class);
                         break;
                     case "Pleasure therapy":
